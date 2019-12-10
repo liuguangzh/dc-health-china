@@ -1,0 +1,39 @@
+.export-box {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  width: 640px;
+  background: rgba(255, 255, 255, .2);
+  color: #fff;
+  z-index: 199;
+  font-family: 'Microsoft YaHei';
+  .export-title {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    text-indent: 10px;
+    text-align: left;
+  }
+
+  .echart-box {
+    width: 620px;
+    max-height: 500px;
+    overflow: auto;
+    margin-left: 10px;
+
+    .item {
+      height: 250px;
+      background: #fff;
+
+      &:nth-of-type(2n) {
+        background: #eee;
+      }
+    }
+  }
+
+  .btn-box {
+    height: 50px;
+    margin-top: 12px;
+    padding-right: 10px;
+  }
+}

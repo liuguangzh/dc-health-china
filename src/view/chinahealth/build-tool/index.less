@@ -1,0 +1,39 @@
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.layout2 {
+  width: 100%;
+  height: 100%;
+  background: url('../../../assets/images/big-bg.png');
+  font-family: 'Microsoft YaHei';
+  .tools-box {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    .tool-item {
+      width: 290px;
+      height: 290px;
+      margin-right: 24px;
+      border-radius: 6px;
+      color: #FFF;
+      &:hover{
+        background: rgba(255, 255, 255, 0.2);
+      }
+      .tool-icon {
+        display: block;
+        height: 130px;
+        margin: 50px auto;
+        margin-bottom: 40px;
+      }
+
+      .tool-title {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+}

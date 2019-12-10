@@ -1,0 +1,65 @@
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.layout1 {
+  font-family: 'Microsoft YaHei';
+
+  .tools-box {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    left: -770px;
+    transition: left 1.5s;
+    &:hover {
+      left: 10px;
+    }
+
+    .tool-item {
+      width: 176px;
+      height: 250px;
+      margin-right: 24px;
+      color: #FFF;
+      border-radius: 4px;
+
+      &:nth-of-type(2n) {
+        background: rgb(26, 93, 131);
+      }
+
+      &:nth-of-type(2n-1) {
+        background: rgb(25, 119, 132);
+      }
+
+      .tool-icon {
+        display: block;
+        height: 50px;
+        margin: 20px auto;
+      }
+
+      .tool-title {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .tool-num {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .tool-content {
+        width: 150px;
+        margin: 0 auto;
+        line-height: 30px;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+}
